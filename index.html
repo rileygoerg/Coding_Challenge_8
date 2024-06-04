@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <head>
-    <title>Document</title>
+    <title>Event Registration Portal</title>
 </head>
 <body>
-    
+    <h1>Event Registration Portal - U14123683</h1>
+    <form id="eventForm" action="">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" name="firstName" id="firstName"><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" name="lastName" id="lastName"><br>
+
+        <label for="emailAddress">Email:</label><br>
+        <input type="text" name="emailAddress" id="emailAddress"><br>
+
+        <label for="eventDate">Choose Event Date</label><br>
+        <select name="eventDate" id="eventDate">
+            <option value=""></option>
+            <option value="date1">July 27, 2024</option>
+            <option value="date2">August 3, 2024</option>
+            <option value="date3">August 15, 2024</option>
+            <option value="date4">September 1, 2024</option>
+        </select><br>
+        <p><strong>Please select your meal preference(s):</strong></p>
+        <input type="checkbox" name="mealPref" id="vegetarian" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <input type="checkbox" name="mealPref" id="nonvegetarian" value="Non-Vegetarian">
+        <label for="nonvegetarian">Non-Vegetarian</label>
+        <input type="checkbox" name="mealPref" id="vegan" value="Vegan">
+        <label for="vegan">Vegan</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="eventData"></div>
+    <script src="script.js"></script>
 </body>
 </html>
